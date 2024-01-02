@@ -1,0 +1,49 @@
+# ██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗████████╗███████╗░█████╗░██╗░░░██╗░░███╗░░
+# ██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝╚══██╔══╝██╔════╝██╔══██╗██║░░░██║░████║░░
+# ██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░░░░██║░░░█████╗░░███████║╚██╗░██╔╝██╔██║░░
+# ██╔══██╗██║░░░░░██╔══██║██║░░██╗██╔═██╗░░░░██║░░░██╔══╝░░██╔══██║░╚████╔╝░╚═╝██║░░
+# ██████╦╝███████╗██║░░██║╚█████╔╝██║░╚██╗░░░██║░░░███████╗██║░░██║░░╚██╔╝░░███████╗
+# ╚═════╝░╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝
+#
+# development: BlackTea_v1 / @noname1773
+#
+
+mysql: # mysql settings
+  host: '' # mysql host
+  port: 3306 # mysql port
+  user: '' # mysql user
+  database: '' # mysql database name
+  password: '' # mysql password
+
+telegram: # telegram settings
+  enable: false
+  bot_name: '' # if false, leave it blank
+  bot_token: '' # if disabled, leave it blank
+
+messages: # messages in plugin
+  successfullyRemoveFromDataBase: '&aPlayer %player have successfully remove from database'
+  successfullyReload: '&aPlugin have successfully a reloaded'
+  sampleNotificationList: '&a%index.&e notification: %notification'
+  sampleCommandList: '&a%index.&e command: %command'
+  successfullyDeleteCommand: '&ayou have successfully delete a command'
+  successfullyAddCommand: '&ayou have successfully add a command'
+  successfullySetPrice: '&ayou have successfully set price'
+  successfullyDeleteNotification: '&ayou have successfully delete it'
+  successfullyCreateNotification: '&ayou have successfully created it'
+  argumentIsNotNumber: '&cthe argument is not a number please change it'
+  nonePlayer: '&cplayer is none!'
+  noneNotification: '&cnotification is none!'
+  notFoundInDataBase: '&c%player is not found in database'
+  noneCommandInNotification: '&ccommand is not have in notification'
+  notificationIsExists: '&cthis notification is exists. Use - /ntf listntf'
+  underCommandIsNotFound: '&cthis under command is not found'
+  help: |-
+    &9| &fSend: /ntf send <player> <notification>
+    &9| &fCreate: /ntf create <notification name> <price>
+    &9| &fDelete: /ntf delete <notification name> 
+    &9| &fEdit price: /ntf editprice <notification name> <price>
+    &9| &fAdd command: /ntf addcmd <notification name> <command type> <argument> 
+    &9| &fDelete command: /ntf delcmd <notification name> <index cmd>
+    &9| &fList of commands: /ntf listcmd <notification name>
+    &9| &fRemove player from database: /ntf remove <player name>
+    &9| &fList of notifications: /ntf listntf
