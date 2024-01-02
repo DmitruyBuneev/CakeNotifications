@@ -1,0 +1,12 @@
+name: CakeNotifications
+version: '${project.version}'
+main: ru.blacktea_v1.cakenotifications.CakeNotifications
+api-version: '1.16'
+author: blacktea_v1
+description: --> cakeworld.pw <--
+depend: [PlaceHolderAPI]
+
+commands:
+  notifications:
+    aliases: ntf
+    description: this command created for send notification in title , message
